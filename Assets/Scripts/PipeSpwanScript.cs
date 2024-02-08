@@ -28,7 +28,7 @@ public class PipeSpwanScript : MonoBehaviour
         else if(isStarted == true)
         {
             SpawnPipe();
-            Time.timeScale += 0.1f;
+            increaseInDiff();
         }
     }
     void SpawnPipe()
@@ -37,5 +37,10 @@ public class PipeSpwanScript : MonoBehaviour
         float highestPoint = transform.position.y + heightOffset;
         Instantiate(pipe, new Vector3(transform.position.x,Random.Range(lowestPoint,highestPoint),0), transform.rotation);
         timer = 0;
+    }
+
+    void increaseInDiff()
+    {
+        Time.timeScale += 0.1f;
     }
 }
