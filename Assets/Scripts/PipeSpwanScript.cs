@@ -28,7 +28,7 @@ public class PipeSpwanScript : MonoBehaviour
         else if(isStarted == true)
         {
             SpawnPipe();
-                
+            Time.timeScale += 0.1f;
         }
     }
     void SpawnPipe()
