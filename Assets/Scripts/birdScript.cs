@@ -24,7 +24,7 @@ public class birdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) == true)
+        if (Input.GetKeyDown(KeyCode.Space) == true)
             StartScreen();
 
         if (transform.position.y>=11.5||transform.position.y<=-10.5)
